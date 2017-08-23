@@ -1,0 +1,85 @@
+//
+   Created by quanquan.sun on 2017/7/21.
+doctype html
+html
+   head
+      title #{title}
+      link(rel='stylesheet', href='/css/base.min.css')
+      link(rel='stylesheet', href='/css/login_public.css')
+      link(rel='stylesheet', href='/css/login_form.css')
+      link(rel='stylesheet', href='/css/login_pop.css')
+      link(rel='stylesheet', href='/css/login.css')
+   body
+      div#h
+      div#w
+      div#c.mpt.a_login(style="background: url(/images/20170714015204267.jpg) center top no-repeat;")
+         div.w
+            div.main.clearfix.e_main
+               a(href="",class="link",target="_blank")
+               div.fr.login
+                  h2 用户登录
+                  form(action="/login",autocomplete="off",class="e_login_form",id="loginForm",method="post",onsubmit='return false;')
+                     p.login-form-error.e_login_error
+                     ul.clearfix.login-form
+                        li.fl
+                           div.clearfix.login-form-w
+                              input(type="text",name="identityId",id="identityId",class="fl e_login_account e_mail_account",maxlength="50",datatype="account",nullmsg="请输入通行证账号",errormsg="通行证格式不正确",sucmsg=" ",placeholder="通行证账号")
+                              i.login-public.login-public-account
+                        li.fl
+                           div.clearfix.login-form-w
+                              input(type="password",name="credential",id="credential",class="fl e_login_pass",maxlength="16",datatype="password",nullmsg="请输入密码",errormsg="密码格式错误",sucmsg=" ",placeholder="密码")
+                              i.login-public.login-public-pass
+                        li.fl.login-form-cap-li.e_cap_pos
+                           div.fl.login-form-w.login-form-captcha
+                              input(type="text",name="captcha",class="fl e_login_captcha",maxlength="6",datatype="captcha",nullmsg="请输入图片上的数字或字母，不区分大小写",errormsg="验证码格式不正确",sucmsg=" ",data-cl="0",placeholder="验证码")
+                           a(href="javascript:;",title="看不清？重新换张！")
+                              img(width="150",height="48",style="display:none;")
+                              input(type="hidden",name="",value="")
+                     input(type="submit",value="登    录",class="block login-form-submit e_login_submit")
+                     input(type="hidden",name="accountType",value="PERSONALITY")
+                     input(type="hidden",name="gotourl",value="")
+                     input(type="hidden",name="ls",value="")
+                     input(type="hidden",name="pid",value="")
+                  ul.login-other.clearfix.e_login_other
+            div.clearfix.other.e_other
+      div#f
+      div.login-pop.hide.e_login_captcha2
+         a(href="javascript:;",class="login-pop-close e_login_captcha2_close",title="关闭")
+         h2.login-pop-title 请再次输入验证码
+         p.login-form-error.e_login_captcha2_error
+         form(action="/index",autocomplete="off",class="e_login_captcha2_form",method="post",onsubmit="return false;")
+            ul.clearfix.login-form
+               li.fl
+                  div.fl.login-form-w.login-form-captcha
+                     input(type="text",class="fl",maxlength="6",datatype="captcha",nullmsg="请输入图片上的数字或字母，不区分大小写",errormsg="验证码格式不正确",sucmsg=" ")
+                  canvas#mycanvas(width='150' height='48')
+                  //a(href="javascript:;",title="看不清？重新换张！")
+                     img(width="150",height="48",style="display:none;")
+                     input(type="hidden",name="",value="")
+            input(type="submit",value="登    录",class="block login-form-submit e_login_captcha2_submit")
+      input(type="hidden",class="e_dname",value="")
+
+      script(src='/js/lib/frame.min.js')
+      script.
+         MPT.Config = {
+            'space_http': '',
+            'passport_http': '',
+            'passport_res_http': '',
+            'pay_http': '',
+            'cs_http': '',
+            'iwgame_http': '',
+            'lvanol_http': '',
+            'iwgame_sslres': ''
+         }
+         MPT.pid = '';
+      script(src = '/js/ctrl/product.js')
+      script(src = '/js/login/miniplanet_login.js')
+      script(src='/js/login/tpl_public.js')
+      script(src='/js/ctrl/valid.js')
+
+
+
+
+
+
+

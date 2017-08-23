@@ -1,0 +1,44 @@
+//
+   Created by quanquan.sun on 2017/8/23.
+
+doctype html
+html
+   head
+      title #{title}
+      link(rel='stylesheet', href='/css/base.min.css')
+      link(rel='stylesheet', href='/css/public.css')
+      link(rel='stylesheet', href='/css/pay.css')
+   body.mpt.a_pay
+      div#h
+      div#w
+         div.nav
+         div.pay-banner
+         div.pay-w.e_pay_wrap
+            div.clearfix.e_pay_info
+            div.clearfix.pay-main
+               div.clearfix.pay-main-w
+                  div.fl.pay-mode.e_pay_mode
+                  div.fl.pay-content.e_pay_content
+      div#f
+   script(src='/js/lib/frame.min.js')
+   script.
+      console.log('mPT                            '+MPT);
+      MPT.Config = {
+         'roleId': '',
+         'accountId': '',
+         'accountName': '',
+         'gameNodeId': '',
+         'space_http': '',
+         'passport_http': '',
+         'pay_http': '',
+         'pay_domain': '',
+         'pay_res_http': '',
+         'cs_http': '',
+         'iwgame_http': '',
+         'lvanol_http': ''
+      }
+      MPT.pid = '';
+   script(src='/js/ctrl/product.js')
+   script(src = '/js/ctrl/miniplanet_pay.js')
+   script(src='/js/ctrl/iwbd.js')
+   script(src='/js/ctrl/hm.js')

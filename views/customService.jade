@@ -1,0 +1,37 @@
+//
+   Created by quanquan.sun on 2017/8/22.
+
+doctype html
+html
+   head
+      title #{title}
+      link(rel='stylesheet', href='/css/base.min.css')
+      link(rel='stylesheet', href='/css/public.css')
+      link(rel='stylesheet', href='/css/index.css')
+   body
+      div#h
+      div#w
+         div.nav
+         div.banner
+         div.mpt.a_index.wraper
+      div#f
+      div.popup.hide
+      div.faq_box
+      script(src='/js/lib/frame.min.js')
+      script.
+         MPT.Config = {
+            'passport_http': '',
+            'pay_http': '',
+            'cs_http': '',
+            'cs_res_http': '',
+            'space_http': '',
+            'passport_res_http': '',
+            'iwgame_http': '',
+            'product_http': ''
+         }
+         MPT.pid = '';
+         MPT.captid = '';
+      script(src='/js/ctrl/product.js')
+      script(src = '/js/ctrl/miniplanet_index.js')
+      script(src='/js/ctrl/hm.js')
+      script(src = '/js/ctrl/user_sq.js')
