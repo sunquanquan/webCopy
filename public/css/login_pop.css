@@ -1,0 +1,52 @@
+@charset 'utf-8';
+.login-pop {
+    background: #fff url(../images/login_pop_close.png) no-repeat right top;
+    border: 1px solid #d2cbcd;
+    color: #666;
+    font: 14px \5FAE\8F6F\96C5\9ED1;
+    position: relative;
+    width: 390px
+}
+
+.login-pop a {
+    color: #666
+}
+
+.login-pop-close {
+    height: 20px;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    width: 20px
+}
+
+.login-pop-title {
+    color: #22a301;
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center
+}
+
+.login-pop-content {
+    margin: 0 auto 20px;
+    height: 280px;
+    width: 320px
+}
+
+.login-pop-other {
+    height: 22px;
+    line-height: 22px;
+    padding-bottom: 30px
+}
+
+.login-pop-other li {
+    width: 24.9%
+}
+
+.login-pop-other .tac {
+    text-align: center
+}
+
+.login-pop-other .tar {
+    text-align: right
+}
