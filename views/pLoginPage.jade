@@ -1,0 +1,55 @@
+//
+   Created by quanquan.sun on 2017/8/2.
+
+doctype html
+html
+   head
+      title #{title}
+      link(rel='stylesheet', href='/css/base.min.css')
+      link(rel='stylesheet', href='/css/login_form.css')
+      link(rel='stylesheet', href='/css/login_pop.css')
+   body
+      div.login-pop.mpt.a_login_pop
+         h2.login-pop-title 绿岸通行证
+         form(autocomplete="off",class="e_login_form",id="loginForm",method="post",onsubmit="return false;")
+            p.login-form-error.e_login_error
+            ul.clearfix.login-form
+               li.fl
+                  div.clearfix.login-form-w
+                     input(type="text",name="identityId",id="identityId",class="fl e_login_account e_mail_account",maxlength="50",datatype="account",nullmsg="请输入通行证账号",errormsg="通行证格式不正确",sucmsg=" ",placeholder="通行证账号")
+                     i.login-public.login-public-account
+               li.fl
+                  div.clearfix.login-form-w
+                     input(type="password",name="credential",id="credential",class="fl e_login_pass",maxlength="16",datatype="password",nullmsg="请输入密码",errormsg="密码格式错误",sucmsg=" ",placeholder="密码")
+                     i.login-public.login-public-pass
+               li.fl.login-form-cap-li.e_cap_pos
+            input(type="submit",value="登    录",class="block login-form-submit e_login_submit")
+         ul.clearfix.login-pop-other.e_login_pop_other
+            li.fl.tar
+               a(href="javascript:;") 忘记密码?
+            li.fl.tar
+               a(href="javascript:;") 忘记账号?
+            li.fl.tac
+               a(href="javascript:;") 注册
+            li.fl
+               a(href="javascript:;") 帮助中心
+      script(src='/js/lib/frame.min.js')
+      script.
+            MPT.Config = {
+               'space_http': '',
+               'passport_http': '',
+               'passport_res_http': '',
+               'pay_http': '',
+               'cs_http': '',
+               'iwgame_http': '',
+               'lvanol_http': '',
+               'iwgame_sslres': ''
+            }
+            MPT.pid = '';
+      script(src='/js/ctrl/product.js')
+      script(src='/js/ctrl/config.js')
+      script(src='/js/ctrl/webtool.nocache.js')
+      script(src = '/js/ctrl/miniplanet_login_nest.js')
+
+
+

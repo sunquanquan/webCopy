@@ -1,0 +1,158 @@
+extends header
+
+block content
+    div.public-top
+        div.clearfix.public-w
+            ul.fl.public-top-account.nologin
+                li.fl.public-pic.public-top-account-icon
+                li.fl
+                    a(href="javascript:;" onclick="popupLogin()") 登录 |&nbsp;
+                    a(href="/register" target="_blank") 注册
+            ul.fr.public-top-menu.e_public_top_menu
+                li.fl
+                    a(href="javascript:;").bolck 设为首页
+                li.fl
+                    a(href="javascript:;").bolck 初度游戏
+                        i.fr
+                    div(style="display: none;").hide.public-top-menu-options
+                        i.public-pic
+                        h2
+                            a(href="javascript:;" target="_blank") 天之禁2
+                        h2
+                            a(href="javascript:;" target="_blank") 权御
+                li.fl.public-top-menu-setting
+                    a(href="javascript:;" title="设置").bolck
+                        i.fr
+                        em.fl.public-pic
+                    div(style="display: none;").hide.public-top-menu-options
+                        i.public-pic
+                        h2
+                            a(href="javascript:;" target="_blank") 密码找回
+                li.fl.public-top-menu-list
+                    a(href="javascript:;" title="目录").bolck
+                        i.fr
+                        em.fl.public-pic
+                    div(style="display: none;").hide.public-top-menu-options
+                        i.public-pic
+                        h2
+                            a(href="javascript:;" target="_blank") 充值
+                        h2
+                            a(href="javascript:;" target="_blank") 客服
+    div.public-header
+        div.clearfix.public-w
+            h1
+                a(href="javascript:;" target="_blank" title="初度空间").fl.public-pic.public-header-logo
+            ul.fr.public-header-nav
+                li.fl
+                    a(href="javascript:;") 我的通行证
+                li.fl
+                    a(href="javascript:;") 账号中心
+                li.fl
+                    a(href="javascript:;" target="_blank") 充值中心
+                li.fl
+                    a(href="javascript:;" target="_blank") 客服中心
+    div.reg-banner
+    div#c
+        div.clearfix.w
+            div.fl.left.e_menu
+                ul.clearfix.menu
+                    li.fl
+                        a(href="javascript:;").block 手机注册
+                            i.reg-public.reg-public-mobile
+                    li.fl
+                        a(href="javascript:;").block 邮箱注册
+                            i.reg-public.reg-public-email
+                    li.fl.current
+                        a(href="javascript:;").block 个性注册
+                            i.reg-public.reg-public-personal
+                h3 已有通行证？马上
+                    a(href="javascript:;") 登录
+            div.fl.main.e_content
+                form(action="/" autocomplete="off" onsubmit="return false;" method="post").e_form#regPersonalForm
+                    ul.clearfix.reg
+                        li.fl
+                            div.reg-w.fl
+                                input(type="text" name="identityId" autocomplete="off" maxlength="16" datatype="personal" nullmsg="可别忘了填写个性账号"
+                                errormsg="必须由6-16位小写英文字母或数字组成，首位为字母" sucmsg="&nbsp;" placeholder="用户名").fl.reg-txt.e_account
+                            div.fl.reg-tip
+                                em.Validform_checktip
+                                em.fl.reg-tip-focus.e_reg_tip_focus 由6-16位小写英文字母或数字组成，首位为字母
+                                    i.reg-tip-arrow.reg-tip-arrow1 ◆
+                                    i.reg-tip-arrow.reg-tip-arrow2 ◆
+                        li.fl
+                            div.reg-w.fl
+                                input(type="password" oncopy="return false;" oncut="return false;" onpaste="return false;" name="credential" autocomplete="off" maxlength="16" datatype="password"
+                                nullmsg="可别忘了填写密码" errormsg="密码格式填写错误" sucmsg="&nbsp;" placeholder="密码").fl.reg-txt.e_pass
+                            div.fl.reg-tip
+                                em.Validform_checktip
+                                em.fl.reg-tip-focus.e_reg_tip_focus 密码由6-16位区分大小写英文字母、数字及符号组成
+                                    i.reg-tip-arrow.reg-tip-arrow1 ◆
+                                    i.reg-tip-arrow.reg-tip-arrow2 ◆
+                        li.fl
+                            div.reg-w.fl
+                                input(type="password" oncopy="return false;" oncut="return false;" onpaste="return false;" name="credential" autocomplete="off" maxlength="16" datatype="password"
+                                nullmsg="可别忘了填写再次输入确认密码" errormsg="两次密码填写必须一样" sucmsg="&nbsp;" recheck="credential" placeholder="确认密码").fl.reg-txt.e_pass2
+                            div.fl.reg-tip
+                                em.Validform_checktip
+                                em.fl.reg-tip-focus.e_reg_tip_focus 需要再输入一次相同密码
+                                    i.reg-tip-arrow.reg-tip-arrow1 ◆
+                                    i.reg-tip-arrow.reg-tip-arrow2 ◆
+                        li.fl
+                            div.reg-w.fl
+                                input(type="text" name="fullname" autocomplete="off" maxlength="8" datatype="fullname" nullmsg="可别忘了填写真实姓名" errormsg="真实姓名格式不对" sucmsg="&nbsp;" placeholder="真实姓名").fl.reg-txt.e_fullname
+                            div.fl.reg-tip
+                                em.Validform_checktip
+                                em.fl.reg-tip-focus.e_reg_tip_focus 请输入真实姓名
+                                    i.reg-tip-arrow.reg-tip-arrow1 ◆
+                                    i.reg-tip-arrow.reg-tip-arrow2 ◆
+                        li.fl
+                            div.reg-w.fl
+                                input(type="text" name="idcardNumber" autocomplete="off" maxlength="18" datatype="idcard" nullmsg="身份证号码很重要，可别忘了填写" errormsg="您输入的身份证号码错误" sucmsg="&nbsp;" placeholder="身份证号").fl.reg-txt.e_idcard
+                            div.fl.reg-tip
+                                em.Validform_checktip
+                                em.fl.reg-tip-focus.e_reg_tip_focus 需输入15或18位身份证号码
+                                    i.reg-tip-arrow.reg-tip-arrow1 ◆
+                                    i.reg-tip-arrow.reg-tip-arrow2 ◆
+                        li.fl
+                            div.reg-w-captcha.fl
+                                input(type="text" name="captcha" autocomplete="off" maxlength="6" datatype="captcha" nullmsg="输入图片上的数字或字母，不区分大小写" errormsg="验证码输入不正确" sucmsg="&nbsp;" placeholder="验证码").fl.reg-txt.e_captcha
+                            a(href="javascript:;" title="看不清？重新换张！")
+                                img(width="150" height="48" style="display: block;" src="/captcha?c=c8a7b9f0ef424cfe90f80c096731b225&r=0.06343647733733326")
+                                input(type="hidden" name="capId" value="c8a7b9f0ef424cfe90f80c096731b225")
+                            div.fl.reg-tip
+                                em.Validform_checktip
+                                em.fl.reg-tip-focus.e_reg_tip_focus 输入图片上的数字或字母，不区分大小写
+                                    i.reg-tip-arrow.reg-tip-arrow1 ◆
+                                    i.reg-tip-arrow.reg-tip-arrow2 ◆
+                    div.clearfix.reg-agree
+                        input(type="checkbox" checked="checked").fl.e_reg_agree
+                        label.fl 我已阅读并同意
+                        a(href="javascript:;" target="_blank") 《绿岸用户协议》
+                    input(type="submit" value="提 交 注 册").block.reg-submit.e_submit
+                    input(type="hidden" name="accountType" value="PERSONALITY")
+                    input(type="hidden" name="registInfo.source.sourceType" value="")
+                    input(type="hidden" name="registInfo.source.sourceValue" value="")
+                    input(type="hidden" name="registInfo.source.sourceLocation" value="")
+                    input(type="hidden" name="registInfo.source.appId" value="")
+    div.public-footer
+        div.clearfix.public-w
+            ul.fl.public-footer-pic
+                li.fl
+                    a(href="javascript:;" target="_blank" title="初度网络").block.public-pic.public-footer-logo
+                li.fl
+                    a(href="javascript:;" target="_blank" title="网站可信度评估").block.public-pic.public-footer-pic1
+                li.fl
+                    a(href="javascript:;" target="_blank" title="互联网文化经营单位").block.public-pic.public-footer-pic2
+            ul.fl.public-footer-copyright
+                li.fl
+                    a(href="javascript:;" target="_blank") 关于初度&nbsp;|&nbsp;
+                    a(href="javascript:;" target="_blank") 产品介绍&nbsp;|&nbsp;
+                    a(href="javascript:;" target="_blank") 商务洽谈&nbsp;|&nbsp;
+                    a(href="javascript:;" target="_blank") 初度招聘&nbsp;|&nbsp;
+                    a(href="javascript:;" target="_blank") 客服中心&nbsp;|&nbsp;
+                    a(href="javascript:;" target="_blank") 家长监控&nbsp;|&nbsp;
+                    a(href="javascript:;" target="_blank") 网站地图
+                li.fl 上海绿岸网络科技股份有限公司 版权所有 本公司产品适合18岁以上人群使用
+                    a(href="javascript:;" target="_blank") 沪ICP备10006417号
+                li.fl 增值电信业务经营许可证 ICP号：沪B2-20090066  网络文化经营许可证 编号：沪网文[2015]0248-078号
+    script(src='/javascripts/product.js')

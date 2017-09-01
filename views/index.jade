@@ -1,0 +1,173 @@
+extends layout
+
+block content
+    div.contain-top
+        div.top
+            a(href="#").logo1
+            span.logo2
+            div.top-nav
+                ul.top-ul#top-ul
+                    each item in nav
+                        li
+                            a(href=item.href) #{item.title}
+            div.top-reg0
+                a(href="javascript:;",onclick='popupLogin()').top-login
+                a(href="/register?type=p").top-reg
+            div.nav-map
+        div.out
+            div.to-hide
+            div.out1
+            div.hide-nav
+                h4 欢迎来到初度地图，
+                    a(href="/pay").go-pay 进入充值中心
+                div.hide-title
+                    ul
+                        li 热门游戏
+                        li 绿岸通行证
+                        li 账号问题
+                        li 安全保护
+                        li 关于初度
+                ul.first-ul
+                    each item in webMap
+                        li
+                            ul.second-ul
+                                each val in item
+                                    li
+                                        a(href=val.href) #{val.title}
+    div#banner
+        div.banner-w
+            div.banner
+                span.prev
+                    em
+                    div.prev-loop.hide
+                        div.loop-in
+                ul.loop
+                    each item in banner
+                        li
+                            a(href=item.href,title=item.title)
+                                img(src=item.src,alt=item.alt)
+                span.next
+                    em
+                    div.next-loop.hide
+                        div.loop-in1
+                ul.span-li
+                    li.li-click
+    div.contain-content
+        div.content
+            div.news
+                div.loop-news
+                    ul.news-ul
+                        each item in tip
+                            li
+                                a(href=item.href,title=item.title)
+                                    img(src=item.src,alt=item.alt)
+                    ul.span-li1
+                        li.li-click1
+                div.news-content
+                    a(href="#").plus
+                    h3
+                        a(href="#",title="【敬请期待】") 【敬请期待】
+                    ul.content-ul
+                        each item in news
+                            li
+                                span.list
+                                a(href=item.href,title=item.title) #{item.word}
+                                em #{item.date}
+            h2 热门游戏
+            h4 Hot Games
+            ul.game-ul
+                li
+                    img(src="./images/20_20170111105706804.jpg").game-img1
+                    div.game-up
+                        b 敬请期待
+                        br
+                        span 神秘大作，待君开启！
+                        br
+    div.contain-foot
+        div.foot0
+            h2 便捷服务
+            h4 Service
+            div.foot-left
+                ul.foot-ul
+                    li.foot-li1
+                        a(href="#").foot-li1a
+                    li.foot-li2
+                        a(href="/findPw").foot-li2a
+                    li.foot-li3
+                        a(href="/lockaccount").foot-li3a
+                    li.foot-li4
+                        a(href="/faq").foot-li4a
+                    li.mar1.foot-li5
+                        a(href="#").foot-li5a
+            div.foot-right
+                div.foot-right-1
+                    p
+                        b 客服电话
+                        | SERVICE PHONE
+                    span.line
+                    div.select-out
+                        span.select-span.select-span1 请按游戏选择
+                        ul.hide.tel_select_ul.e_select_con.select-ul.select-ul1
+                            each item in phone
+                                li #{item}
+                div.foot-right-2
+                    p
+                        b 客服邮箱
+                        | SERVICE MAIL
+                    span.line
+                    div.select-out.select-out2
+                        span.select-span.select-span2.width2 请按游戏选择
+                        ul.hide.e_select_con.email_select_ul.select-ul.select-ul2.width1
+                            each item in email
+                                li #{item}
+    div.foot_w
+        div.foot_line_bg
+        div.foot.layout.clearfix
+            div.ico_foot_w.fl.clearfix
+                a(href="#").fl.ico_foot_common.ico_foot_1
+            div.foot_detail.fl
+                ul.foot_menu.clearfix
+                    li.fl
+                        a(href="#") 关于初度
+                    li.line.fl
+                    li.fl
+                        a(href="#") 产品介绍
+                    li.line.fl
+                    li.fl
+                        a(href="#") 商务洽谈
+                    li.line.fl
+                    li.fl
+                        a(href="#") 初度招聘
+                    li.line.fl
+                    li.fl
+                        a(href="#") 客服中心
+                    li.line.fl
+                    li.fl
+                        a(href="#") 家长监控
+                    li.line.fl
+    div.popup.hide
+    script(src='/js/lib/frame.min.js')
+    script.
+        MPT.Config = {
+            'passport_http': '',
+            'pay_http': '',
+            'cs_http': '',
+            'cs_res_http': '',
+            'space_http': '',
+            'passport_res_http': '',
+            'iwgame_http': '',
+            'product_http': ''
+        }
+        MPT.pid = '';
+    script(src="http://cdn.bootcss.com/blueimp-md5/1.1.0/js/md5.js")
+    script(src="http://cdn.bootcss.com/blueimp-md5/1.1.0/js/md5.min.js")
+    script(src='/js/ctrl/product.js')
+    script(src='/js/lib/jquery.min.js')
+    script(src = '/js/lib/jquery.blockUI.min.js')
+    script(src='/js/tpl/tpl_public.js')
+    script(src='/js/ctrl/config.js')
+    script(src='/js/ctrl/public.js')
+
+    script(src='/js/ctrl/hm.js')
+    script(src = '/js/ctrl/user_sq.js')
+    script(src='/javascripts/index_v2.js')

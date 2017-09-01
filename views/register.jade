@@ -1,0 +1,37 @@
+extends header
+
+block content
+    body.mpt.a_reg
+        div#publicTop
+        div#publicHeader
+        div.reg-banner
+        div#c
+            div.clearfix.w
+                div.fl.left.e_menu
+                div.fl.main.e_content
+        div#publicFooter
+        script(src='/js/lib/frame.min.js')
+        script.
+            MPT.Config = {
+                'space_http': '',
+                'passport_http': '',
+                'passport_res_http': '',
+                'pay_http': '',
+                'cs_http': '',
+                'iwgame_http': '',
+                'lvanol_http': '',
+                'iwgame_sslres': ''
+            }
+            MPT.pid = '';
+        script(src='/js/ctrl/product.js')
+        script(src='/javascripts/config.js')
+        script(src='/js/ctrl/webtool.nocache.js')
+        script(src='/javascripts/miniplanet_reg.js')
+
+
+
+
+
+
+
+
