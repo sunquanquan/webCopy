@@ -1,0 +1,493 @@
+@charset 'utf-8';
+a {
+    color: #666
+}
+
+.reg-public {
+    background: url(../images/reg_public.png) no-repeat
+}
+
+.reg-banner {
+    background: url(../images/reg_banner.jpg) no-repeat center top;
+    height: 120px;
+    min-width: 968px
+}
+
+#c {
+    background-color: #fff;
+    color: #666;
+    font: 14px \5FAE\8F6F\96C5\9ED1
+}
+
+#c .w {
+    border: 1px solid #b5c5cf;
+    margin: 40px auto;
+    width: 968px
+}
+
+.left {
+    background-color: #91c945;
+    color: #fff;
+    height: 558px;
+    position: relative;
+    width: 224px
+}
+
+.left a {
+    color: #fff
+}
+
+.left h3 {
+    padding-top: 225px;
+    text-align: center
+}
+
+.left h3 a {
+    border-bottom: 1px solid #fff
+}
+
+.left h3 a:hover {
+    text-decoration: none
+}
+
+.menu li {
+    position: relative;
+    width: 100%
+}
+
+.menu li a {
+    font-size: 18px;
+    height: 100px;
+    line-height: 100px;
+    text-indent: 93px
+}
+
+.menu li a:hover {
+    background-color: #529e13;
+    text-decoration: none;
+    -webkit-transition: background-color .5s linear .1s;
+    -moz-transition: background-color .5s linear .1s;
+    -ms-transition: background-color .5s linear .1s;
+    transition: background-color .5s linear .1s
+}
+
+.menu .current {
+    background-color: #529e13
+}
+
+.menu .current a {
+    cursor: default
+}
+
+.menu .reg-public-mobile {
+    background-position: 0 0;
+    height: 41px;
+    left: 33px;
+    position: absolute;
+    top: 30px;
+    width: 27px
+}
+
+.menu .reg-public-email {
+    background-position: 0 -42px;
+    height: 26px;
+    left: 27px;
+    position: absolute;
+    top: 37px;
+    width: 41px
+}
+
+.menu .reg-public-personal {
+    background-position: -28px 0;
+    height: 40px;
+    left: 33px;
+    position: absolute;
+    top: 30px;
+    width: 40px
+}
+
+.main {
+    background-color: #fff;
+    height: 558px;
+    width: 744px
+}
+
+.reg {
+    padding: 30px 0 0 90px;
+    width: 680px
+}
+
+.reg li {
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    width: 655px
+}
+
+.reg li img {
+    display: inline;
+    float: left
+}
+
+.reg-required {
+    color: #ed0000;
+    font-size: 18px;
+    left: 0;
+    line-height: 48px;
+    position: absolute
+}
+
+.reg-w, .reg-w-captcha {
+    border: 1px solid #ccc;
+    height: 46px;
+    padding-left: 8px;
+    overflow: hidden;
+    position: relative
+}
+
+.reg-w {
+    width: 310px
+}
+
+.reg-w-captcha {
+    margin-right: 10px;
+    width: 150px
+}
+
+.reg-txt, .reg-txt-captcha {
+    border: 0;
+    font-family: \5FAE\8F6F\96C5\9ED1;
+    height: 46px;
+    line-height: 46px
+}
+
+.reg-txt {
+    width: 100%
+}
+
+.reg-txt-captcha {
+    width: 210px
+}
+
+.reg-btn-captcha {
+    border-left: 1px solid #ccc;
+    color: #999;
+    line-height: 46px;
+    text-align: center;
+    width: 99px
+}
+
+.reg-btn-captcha a:hover {
+    text-decoration: none
+}
+
+.reg-agree {
+    height: 24px;
+    line-height: 24px
+}
+
+.reg-agree input {
+    margin: 7px 5px 0 140px;
+    *margin-top: 2px
+}
+
+.reg-agree a {
+    color: #91c945
+}
+
+.reg-submit {
+    background-color: #78ba1a;
+    border: 1px solid #6faa11;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font: 18px \5FAE\8F6F\96C5\9ED1;
+    height: 52px;
+    margin: 15px 0 0 125px;
+    width: 250px
+}
+
+.reg-submit:hover {
+    background-color: #669f13
+}
+
+.reg-tip {
+    width: 320px;
+    position: relative
+}
+
+.reg-tip-focus {
+    border: 1px solid #ccc;
+    display: none;
+    font-size: 12px;
+    height: 28px;
+    line-height: 28px;
+    margin: 9px 0 0 15px;
+    padding: 0 8px;
+    position: relative
+}
+
+.reg-tip-arrow {
+    font: 18px \5b8b\4f53;
+    position: absolute;
+    top: 5px
+}
+
+.reg-tip-arrow1 {
+    color: #bbb;
+    left: -9px
+}
+
+.reg-tip-arrow2 {
+    color: #fff;
+    left: -8px
+}
+
+.reg-tip2 {
+    color: #999;
+    left: 8px;
+    line-height: 20px;
+    position: absolute;
+    top: 13px
+}
+
+.Validform_checktip {
+    color: #f00;
+    font-size: 12px;
+    line-height: 48px;
+    padding-left: 15px
+}
+
+.Validform_checktip a {
+    color: #f00;
+    text-decoration: underline
+}
+
+.reg-tip-error {
+    border: 1px solid #f00
+}
+
+.reg-tip-success {
+    border: 1px solid #91c945
+}
+
+.reg-tip-important {
+    color: #c00
+}
+
+.reg-ok-title {
+    color: #529e13;
+    font-size: 40px;
+    line-height: 120px;
+    text-align: center
+}
+
+.reg-ok-tip {
+    line-height: 24px;
+    text-align: center
+}
+
+.reg-ok-tip a, .reg-ok-tip em, .reg-confirm-tip em {
+    color: #529e13
+}
+
+.reg-ok-tip2 {
+    margin: 10px 0;
+    text-align: center
+}
+
+.reg-ok-tip2 em {
+    color: #f00
+}
+
+.reg-ok-btn, .reg-fail-btn, .reg-confirm-btn {
+    background-color: #78ba1a;
+    border: 1px solid #6faa11;
+    border-radius: 3px;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    width: 268px
+}
+
+.reg-ok-btn {
+    font-size: 18px;
+    margin: 36px auto 0
+}
+
+.reg-fail-btn {
+    font-size: 24px;
+    margin: 56px auto 0
+}
+
+.reg-ok-btn:hover, .reg-fail-btn:hover, .reg-confirm-btn:hover {
+    background-color: #669f13;
+    color: #fff;
+    text-decoration: none
+}
+
+.reg-ok-other {
+    overflow: hidden;
+    padding-top: 60px;
+    position: relative
+}
+
+.reg-ok-other ul {
+    left: 50%;
+    position: relative
+}
+
+.reg-ok-other li {
+    margin: 0 20px;
+    position: relative;
+    right: 50%
+}
+
+.reg-ok-other a {
+    background-image: url(../images/reg/reg_ok_public.png);
+    height: 168px;
+    width: 168px
+}
+
+.reg-ok-other-st {
+    background-position: 0 0
+}
+
+.reg-ok-other-st:hover {
+    background-position: -169px 0
+}
+
+.reg-ok-other-email {
+    background-position: 0 -169px
+}
+
+.reg-ok-other-email:hover {
+    background-position: -169px -169px
+}
+
+.reg-ok-other-mobile {
+    background-position: 0 -338px
+}
+
+.reg-ok-other-mobile:hover {
+    background-position: -169px -338px
+}
+
+.reg-fail-title, .reg-confirm-title {
+    color: #529e13;
+    font-size: 24px;
+    line-height: 80px;
+    padding-top: 50px;
+    text-align: center
+}
+
+.reg-fail-tip, .reg-confirm-tip {
+    text-align: center
+}
+
+.reg-fail-other {
+    border-top: 1px solid #f3f3f3;
+    margin-top: 120px;
+    padding: 13px 0 0 136px
+}
+
+.reg-fail-other dt {
+    color: #529e13;
+    font-size: 18px;
+    line-height: 50px
+}
+
+.reg-fail-other a {
+    background-color: #91c945;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 56px;
+    margin-right: 25px;
+    padding: 0 30px
+}
+
+.reg-fail-other a:hover {
+    background-color: #6e9934;
+    color: #c2c2c2;
+    text-decoration: none
+}
+
+.reg-confirm-email {
+    margin: 56px 0 120px 193px
+}
+
+.reg-confirm-btn {
+    font-size: 24px
+}
+
+.reg-confirm-send {
+    padding: 22px 14px 0
+}
+
+.reg-confirm-send a {
+    text-decoration: underline
+}
+
+.reg-confirm-notice {
+    line-height: 24px;
+    padding-left: 86px
+}
+
+.reg-confirm-notice dt {
+    background-color: #91c945;
+    color: #fff;
+    margin-bottom: 15px;
+    padding: 0 10px
+}
+
+.reg-confirm-notice dd {
+    text-indent: 10px
+}
+
+.reg-confirm-notice a {
+    color: #529e13
+}
+
+.errorSpan {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: -29px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #f66960;
+    color: #fff;
+    line-height: 19px;
+    text-align: center;
+    text-indent: 0;
+    font-size: 18px;
+    cursor: pointer
+}
+
+.e-mail-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #ccc;
+    width: 320px;
+    max-height: 216px;
+    overflow: auto
+}
+
+.e-mail-list li {
+    float: left;
+    width: 100%;
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    text-indent: 5px;
+    color: #000;
+    cursor: pointer;
+    background-color: #fff
+}
+
+.e-mail-list li:hover {
+    background-color: #ccc
+}

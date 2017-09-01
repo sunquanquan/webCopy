@@ -1,0 +1,521 @@
+@charset 'utf-8';
+.user-passport-w {
+    margin-left: auto;
+    margin-right: auto;
+    width: 980px
+}
+
+.user-passport-loading, .user-passport-loading-error {
+    font-size: 20px;
+    padding: 20px;
+    text-align: center
+}
+
+.user-passport-loading-error {
+    color: #f00
+}
+
+.user-passport-banner {
+    background: url(../images/user/user_passport_banner.jpg) no-repeat center -20px;
+    height: 120px;
+    min-width: 980px
+}
+
+.user-passport-content {
+    padding: 30px 0
+}
+
+.user-passport-main {
+    width: 650px
+}
+
+.user-passport-func {
+    width: 310px
+}
+
+.user-passport-title {
+    border-bottom: 1px solid #d7e0e6;
+    color: #666;
+    font: 24px/100% \5FAE\8F6F\96C5\9ED1;
+    height: 38px
+}
+
+.user-passport-title em {
+    border-bottom: 2px solid #5abb00;
+    height: 38px;
+    margin-top: -1px
+}
+
+.user-passport-title a {
+    color: #858585;
+    font: 12px \5b8b\4f53;
+    margin-top: 12px
+}
+
+.user-passport-title a:hover {
+    color: #5abb00
+}
+
+.user-passport-account {
+    border: 1px solid #d7e0e6;
+    height: 548px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    padding: 0 20px
+}
+
+.user-passport-account h2 {
+    height: 32px;
+    line-height: 32px;
+    padding-top: 16px
+}
+
+.user-passport-account h2 em {
+    color: #333;
+    font: 16px \5FAE\8F6F\96C5\9ED1
+}
+
+.user-passport-account h2 a, .user-passport-account h3 a {
+    color: #36c;
+    font-size: 12px;
+    margin-right: 60px
+}
+
+.user-passport-account h2 a:hover, .user-passport-account h3 a:hover {
+    color: #5abb00
+}
+
+.user-passport-account h3 {
+    border-bottom: 1px solid #d7e0e6;
+    color: #666;
+    font-size: 14px;
+    line-height: 100%;
+    margin-bottom: 14px;
+    padding: 21px 0
+}
+
+.user-passport-account-score {
+    font: 16px/36px \5FAE\8F6F\96C5\9ED1;
+    height: 67px;
+    padding-top: 12px
+}
+
+.user-passport-account-score h4 {
+    margin-right: 10px
+}
+
+.user-passport-account-score-star {
+    background: url(../images/user/user_star.png) repeat-x 0 0;
+    height: 45px;
+    margin-right: 13px;
+    width: 160px
+}
+
+.user-passport-account-score-star li {
+    background: url(../images/user/user_star.png) repeat-x 0 -46px;
+    height: 45px;
+    width: 0
+}
+
+.user-passport-account-score-star .securityLv10 {
+    width: 15px
+}
+
+.user-passport-account-score-star .securityLv20 {
+    width: 32px
+}
+
+.user-passport-account-score-star .securityLv30 {
+    width: 47px
+}
+
+.user-passport-account-score-star .securityLv40 {
+    width: 64px
+}
+
+.user-passport-account-score-star .securityLv50 {
+    width: 79px
+}
+
+.user-passport-account-score-star .securityLv60 {
+    width: 96px
+}
+
+.user-passport-account-score-star .securityLv70 {
+    width: 111px
+}
+
+.user-passport-account-score-star .securityLv80 {
+    width: 128px
+}
+
+.user-passport-account-score-star .securityLv90 {
+    width: 143px
+}
+
+.user-passport-account-score-txt {
+    color: #5abb00;
+    font-size: 14px;
+    margin: -3px 25px 0 0
+}
+
+.user-passport-account-score-txt em {
+    font: bold 30px arial
+}
+
+.user-passport-account-score-risk em {
+    color: #f00;
+    font: bold 24px arial
+}
+
+.user-passport-account-score a {
+    color: #36c;
+    font: 12px \5b8b\4f53;
+    margin: 13px 0 0 20px
+}
+
+.user-passport-account-security li {
+    border-bottom: 1px dashed #d7d7d7;
+    color: #999;
+    height: 70px;
+    margin-bottom: 22px;
+    width: 100%
+}
+
+.user-passport-account-security .last {
+    border-bottom: 0;
+    margin: 0
+}
+
+.user-passport-account-security i {
+    background: url(../images/user/user_public.png) no-repeat;
+    height: 48px;
+    width: 48px
+}
+
+.user-passport-account-security-mobile i {
+    background-position: 0 0
+}
+
+.user-passport-account-security-email i {
+    background-position: -49px 0
+}
+
+.user-passport-account-security-token i {
+    background-position: -98px 0
+}
+
+.user-passport-account-security-idcard i {
+    background-position: -147px 0
+}
+
+.user-passport-account-security h4 {
+    color: #333;
+    font: 16px/48px \5FAE\8F6F\96C5\9ED1;
+    margin: 0 20px 0 10px
+}
+
+.user-passport-account-security p {
+    line-height: 20px;
+    margin: 4px 40px 0 0;
+    width: 270px
+}
+
+.user-passport-account-security ul {
+    width: 150px
+}
+
+.user-passport-account-security-nobind li, .user-passport-account-security-bind li {
+    border-bottom: 0;
+    color: #f00;
+    font-size: 14px;
+    height: auto;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-top: 15px;
+    width: auto
+}
+
+.user-passport-account-security-nobind .icon {
+    background: url(../images/user/user_public.png) no-repeat -162px -224px;
+    height: 16px;
+    margin-right: 9px;
+    width: 16px
+}
+
+.user-passport-account-security-bind li {
+    color: #5abb00
+}
+
+.user-passport-account-security-bind .icon {
+    background: url(../images/user/user_public.png) no-repeat -145px -224px;
+    height: 16px;
+    margin-right: 9px;
+    width: 16px
+}
+
+.user-passport-account-security a {
+    color: #36c;
+    font-weight: bold;
+    text-decoration: underline
+}
+
+.user-passport-quick {
+    margin-bottom: 40px
+}
+
+.user-passport-quick ul {
+    padding-top: 20px
+}
+
+.user-passport-quick li {
+    border: 1px solid #d7e0e6;
+    margin-right: 10px;
+    overflow: hidden;
+    text-align: center
+}
+
+.user-passport-quick .last {
+    margin-right: 0
+}
+
+.user-passport-quick a {
+    height: 114px;
+    padding-top: 20px;
+    width: 120px
+}
+
+.user-passport-quick i {
+    background: url(../images/user/user_public.png) no-repeat;
+    cursor: pointer;
+    height: 68px;
+    margin: 0 auto 15px;
+    width: 68px
+}
+
+.user-passport-quick-1 i {
+    background-position: 0 -49px
+}
+
+.user-passport-quick-2 i {
+    background-position: -69px -49px
+}
+
+.user-passport-quick-3 i {
+    background-position: -138px -49px
+}
+
+.user-passport-quick-4 i {
+    background-position: -207px -49px
+}
+
+.user-passport-quick-5 i {
+    background-position: -276px -49px
+}
+
+.user-passport-quick-1 a:hover i {
+    background-position: 0 -118px
+}
+
+.user-passport-quick-2 a:hover i {
+    background-position: -69px -118px
+}
+
+.user-passport-quick-3 a:hover i {
+    background-position: -138px -118px
+}
+
+.user-passport-quick-4 a:hover i {
+    background-position: -207px -118px
+}
+
+.user-passport-quick-5 a:hover i {
+    background-position: -276px -118px
+}
+
+.user-passport-quick h3 {
+    color: #858585;
+    font: 16px \5FAE\8F6F\96C5\9ED1;
+    text-align: center
+}
+
+.user-passport-quick a:hover h3 {
+    color: #5abb00
+}
+
+.user-passport-privilege {
+    height: 165px;
+    overflow: hidden
+}
+
+.user-passport-privilege ul {
+    padding-top: 16px
+}
+
+.user-passport-privilege li {
+    background-color: #d7e0e6;
+    height: 108px;
+    margin-right: 10px;
+    padding: 1px;
+    position: relative;
+    width: 208px
+}
+
+.user-passport-privilege li:last-child {
+    margin-right: 0
+}
+
+.user-passport-privilege img {
+    height: 100%;
+    width: 100%
+}
+
+.user-passport-privilege h3 {
+    background-color: #000;
+    bottom: 0;
+    color: #c5c5c5;
+    filter: alpha(opacity=70);
+    height: 30px;
+    line-height: 30px;
+    opacity: .7;
+    position: absolute;
+    text-align: center;
+    width: 208px
+}
+
+.user-passport-game {
+    font-size: 0;
+    height: 190px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-align: center
+}
+
+.user-passport-game li {
+    border: 1px solid #d7e0e6;
+    height: 188px;
+    position: relative;
+    width: 308px
+}
+
+.user-passport-game img {
+    height: 100%;
+    width: 100%
+}
+
+.user-passport-game ul {
+    background-color: #000;
+    bottom: 0;
+    filter: alpha(opacity=70);
+    height: 30px;
+    left: 1px;
+    line-height: 30px;
+    opacity: .7;
+    position: absolute;
+    width: 308px
+}
+
+.user-passport-game ul li {
+    border: 0;
+    height: 100%;
+    font-size: 12px;
+    width: 77px
+}
+
+.user-passport-game ul a {
+    color: #ccc
+}
+
+.user-passport-game ul a:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+.user-passport-download {
+    height: 98px;
+    margin-bottom: 27px;
+    overflow: hidden
+}
+
+.user-passport-download img {
+    height: 100%;
+    width: 100%
+}
+
+.user-passport-cs {
+    height: 450px;
+    margin-bottom: 40px;
+    overflow: hidden
+}
+
+.user-passport-activity {
+    height: 165px;
+    overflow: hidden
+}
+
+.user-passport-activity ul {
+    color: #5abb00;
+    list-style-type: disc;
+    padding: 10px 0 0 15px
+}
+
+.user-passport-activity li {
+    border-bottom: 1px dashed #d7d7d7;
+    height: 32px;
+    line-height: 32px;
+    width: 100%
+}
+
+.user-passport-activity li a {
+    color: #858585
+}
+
+.user-passport-activity li a:hover, .user-passport-activity li .fr {
+    color: #5abb00
+}
+
+.user-passport-idcardtip {
+    padding: 50px 20px;
+    border: 1px solid #d7e0e6;
+    height: 448px;
+    margin-bottom: 40px;
+    overflow: hidden
+}
+
+.user-passport-idcardtip p {
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    text-align: center
+}
+
+.idcard-smail-icon {
+    width: 30px;
+    height: 30px;
+    background: url(../images/user/user_public.png) no-repeat -182px -187px;
+    margin-right: 14px;
+    margin-left: 30px
+}
+
+.user-center-idcard-btn {
+    width: 120px;
+    height: 36px;
+    background: #78ba1a;
+    border: 1px solid #6faa11;
+    line-height: 36px;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    margin: 20px auto
+}
+
+.idcard-tip-red {
+    font-size: 12px;
+    color: #f00;
+    line-height: 18px
+}
+
+.user-center-idcard-btn:hover {
+    color: #fff
+}
