@@ -1,0 +1,11 @@
+{
+  "mysqlOptions": {
+    "host": "116.62.229.245",
+    "user": "sunquanquan",
+    "password": "sunqq",
+    "database": "websql",
+    "port": 3306,
+    "connectionLimit": 30,
+    "multipleStatements": true
+  }
+}
